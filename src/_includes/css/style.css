@@ -202,7 +202,7 @@ header .intro .hire-me:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-bottom: 1rem;
 }
 .featured-img .prev-next a {
