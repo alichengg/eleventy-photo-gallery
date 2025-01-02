@@ -64,7 +64,7 @@ module.exports = (eleventyConfig) => {
 
     const IMAGE_DIR = imgDir || "./src/images/";
     const metadata = await Image(IMAGE_DIR + src, {
-      widths: widths || [],
+      widths: [],
       formats: ["webp", "jpeg"],
       urlPath: "/img/",
       outputDir: "_site/img",
