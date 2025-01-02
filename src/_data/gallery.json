@@ -1,20 +1,12 @@
 [
     {
-        "title": "Terrace with green plants on night street",
-        "date": "October 20, 2020",
-        "credit": "Photo by Aldiyar Seitkassymov",
-        "linkToAuthor": "https://www.pexels.com/photo/terrace-with-green-plants-on-night-street-3100835/",
-        "src": "terrace-window.jpg",
-        "alt": "Terrace outside shop window with green plants and pink tree on night street",
-        "imgDir": "/images/"
-    },
-    {
-        "title": "Gasoline station during nighttime",
-        "date": "October 23, 2020",
-        "credit": "Photo by Artem Saranin",
-        "linkToAuthor": "https://www.pexels.com/photo/gasoline-station-during-nighttime-1453781/",
-        "src": "gas-station.jpg",
-        "alt": "Gasoline station during nighttime with glowing red roof lights",
+        "title": "Happy New Year",
+        "date": "January 01, 2025",
+        "credit": "",
+        "linkToAuthor": "",
+        "src": "Snow.png",
+        "alt": "New Year",
         "imgDir": "/images/"
     }
+
 ]
