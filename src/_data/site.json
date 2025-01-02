@@ -4,5 +4,8 @@
         "lastName": "Cheng",
         "email": "alicheng96@gmail.com",
         "about": "Freelance Digital Painting Enthusiast"
-    }
+    },
+    "socials": {
+        "email": "alicheng96@gmail.com"
+    },
 }
