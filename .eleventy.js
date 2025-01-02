@@ -78,9 +78,8 @@ module.exports = (eleventyConfig) => {
       >`;
   
     // 返回简单的 <picture> 标签（只使用原图）
-    return `<picture>${img}</picture>`;
+    return `<picture>${images}</picture>`;
   });
-
 
   return {
     dir: {
