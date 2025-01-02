@@ -45,10 +45,7 @@ url: https://eleventy-gallery.netlify.app
                         className="showcase-img",
                         sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 1000px) 100vw, 33.3vw"
                     %}
-                    <div class="image-description">
-                        <h1 class="h2">{{ image.title }}</h1>
-                        <p>{{ image.credit }} on <a class="credit" href="{{ image.linkToAuthor }}">Pexels</a></p>
-                    </div>
+
                     <div class="prev-next">
                         {% if pagination.href.previous %}
                             <a class="prev" href="{{ pagination.href.previous }}"><span class="lt">&lt;</span> Prev</a>
@@ -61,6 +58,12 @@ url: https://eleventy-gallery.netlify.app
                             {% endif %}
                         {% endif %}
                     </div>
+
+                    <div class="image-description">
+                        <h1 class="h2">{{ image.title }}</h1>
+                        <p>{{ image.credit }} on <a class="credit" href="{{ image.linkToAuthor }}">Pexels</a></p>
+                    </div>
+
                 </div>
             </div>
         </main>
