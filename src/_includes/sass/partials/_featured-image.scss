@@ -10,12 +10,12 @@
     .image-container {
         width: 100%;
         max-width: 1050px;
+        position: relative; /* 关键：使子元素绝对定位相对于父元素 */
         padding: 0;
     }
 
     .showcase-img {
         object-fit: cover;
-        /* object-fit: contain; this is best but causes letterboxing" */
         max-width: 100%;
         height: 90vh;
         max-height: 600px;
@@ -23,26 +23,39 @@
     }
 
     .prev-next {
+        position: absolute; /* 关键：让按钮定位在图片区域 */
+        top: 50%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+        transform: translateY(-50%); /* 垂直居中 */
+        pointer-events: none; /* 防止遮挡图片的点击事件 */
+    }
 
-        a {
-            padding: 7px 10px;
-            border: 1px solid lightgray;
-            border-radius: 3px;
-            text-decoration: none;
-            background: inherit;
-            font-size: 1em;
-            color: #333;
-            background: rgb(242, 242, 242);
+    .prev-next a {
+        pointer-events: auto; /* 恢复按钮的点击事件 */
+        padding: 10px 15px;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.8);
+        font-size: 1em;
+        color: #333;
+        transition: background-color 0.3s ease, color 0.3s ease;
 
-            &:hover {
-                background: rgb(237, 237, 237);
-            }
+        &:hover {
+            background: rgba(255, 255, 255, 1);
+            color: #000;
         }
+    }
+
+    .prev {
+        margin-left: 10px; /* 适当调整按钮距离图片边缘的间距 */
+    }
+
+    .next {
+        margin-right: 10px; /* 适当调整按钮距离图片边缘的间距 */
     }
 
     .image-description {
