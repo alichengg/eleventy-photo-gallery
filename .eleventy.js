@@ -58,45 +58,29 @@ module.exports = (eleventyConfig) => {
     return year.toString();
   });
 
-  eleventyConfig.addShortcode("img", async function ({ src, alt, width, height, widths, className, imgDir, sizes = "100vw"}) {
-    if (alt === undefined) {
-      throw new Error(`Missing \`alt\` on responsive image from: ${src}`);
-    }
+eleventyConfig.addShortcode("img", async function ({ src, alt, className, imgDir }) {
+  if (alt === undefined) {
+    throw new Error(`Missing \`alt\` on responsive image from: ${src}`);
+  }
 
-    const IMAGE_DIR = imgDir || "./src/images/";
-    const metadata = await Image(IMAGE_DIR + src, {
-      widths: widths || [300, 480, 640, 1024],
-      formats: ["webp", "jpeg"],
-      urlPath: "/img/",
-      outputDir: "_site/img",
-      defaultAttributes: {
-        loading: "lazy",
-        decoding: "async"
-      }
-    });
+  const IMAGE_DIR = imgDir || "./src/images/";
 
-    let lowsrc = metadata.jpeg[0];
-    let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+  // 直接使用原始图片，不生成压缩格式
+  const originalSrcPath = IMAGE_DIR + src;
 
-    const sources = Object.values(metadata).map((imageFormat) => {
-      const srcType = imageFormat[0].sourceType;
-      const srcset = imageFormat.map(entry => entry.srcset).join(", ");
-      return `<source type="${srcType}" srcset="${srcset}" sizes="${sizes}">`
-    }).join("\n");
+  const img = `
+    <img
+      src="${originalSrcPath}"
+      alt="${alt}"
+      loading="lazy"
+      decoding="async"
+      class="${className || ''}"
+    >`;
 
-    const img = `
-      <img
-        src="${lowsrc.url}"
-        width="${highsrc.width}"
-        height="${highsrc.height}"
-        alt="${alt}"
-        loading="lazy"
-        decoding="async"
-        class="${className || ''}"
-      >`;
+  // 返回简单的 <picture> 标签（只使用原图）
+  return `<picture>${img}</picture>`;
+});
 
-    return `<picture>\n\t${sources}\n\t${img}</picture>`;
-  });
 
   return {
     dir: {
