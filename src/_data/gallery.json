@@ -61,7 +61,60 @@
         "src": "JYY.png",
         "alt": "20240624",
         "imgDir": "/images/"
+    },
+    {
+        "title": "Dao",
+        "date": "February 24, 2024",
+        "credit": "",
+        "linkToAuthor": "20240224A",
+        "src": "Dao.png",
+        "alt": "20240224",
+        "imgDir": "/images/"
+    },
+    {
+        "title": "Yun",
+        "date": "February 24, 2024",
+        "credit": "",
+        "linkToAuthor": "20240224A",
+        "src": "yunyun.png",
+        "alt": "20240224",
+        "imgDir": "/images/"
+    },
+    {
+        "title": "Qingyun",
+        "date": "August 11, 2023",
+        "credit": "",
+        "linkToAuthor": "20230811A",
+        "src": "Qingyun.jpg",
+        "alt": "20230811",
+        "imgDir": "/images/"
+    },
+    {
+        "title": "YueLuo",
+        "date": "August 15, 2023",
+        "credit": "",
+        "linkToAuthor": "20230815A",
+        "src": "YueLuo.png",
+        "alt": "20230815",
+        "imgDir": "/images/"
+    },
+    {
+        "title": "Xuexi",
+        "date": "July 05, 2023",
+        "credit": "",
+        "linkToAuthor": "20230705A",
+        "src": "Xuexi.png",
+        "alt": "20230705",
+        "imgDir": "/images/"
+    },
+    {
+        "title": "Xianyilang",
+        "date": "September 06, 2020",
+        "credit": "",
+        "linkToAuthor": "20200906A",
+        "src": "Xianyilang.png",
+        "alt": "20200906",
+        "imgDir": "/images/"
     }
     
-
 ]
