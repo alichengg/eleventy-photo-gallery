@@ -3,9 +3,9 @@
         "title": "Snow Day",
         "date": "January 01, 2025",
         "credit": "",
-        "linkToAuthor": "Happy New Year",
+        "linkToAuthor": "",
         "src": "Snow.png",
-        "alt": "New Year",
+        "alt": "",
         "imgDir": "/images/"
     },
     {
@@ -14,7 +14,7 @@
         "credit": "",
         "linkToAuthor": "",
         "src": "666.png",
-        "alt": "New Year",
+        "alt": "",
         "imgDir": "/images/"
     },
     {
@@ -23,7 +23,7 @@
         "credit": "",
         "linkToAuthor": "",
         "src": "hanyansu.png",
-        "alt": "New Year",
+        "alt": "",
         "imgDir": "/images/"
     },
     {
@@ -32,25 +32,25 @@
         "credit": "",
         "linkToAuthor": "",
         "src": "datou.png",
-        "alt": "New Year",
+        "alt": "",
         "imgDir": "/images/"
     },
     {
-        "title": "wuk",
+        "title": "Wukong",
         "date": "January 01, 2025",
         "credit": "",
         "linkToAuthor": "",
         "src": "wuk.png",
-        "alt": "New Year",
+        "alt": "",
         "imgDir": "/images/"
     },
     {
-        "title": "wuk",
+        "title": "Wukong",
         "date": "January 01, 2025",
         "credit": "",
         "linkToAuthor": "",
         "src": "wuk2.png",
-        "alt": "New Year",
+        "alt": "",
         "imgDir": "/images/"
     },
     {
@@ -59,7 +59,7 @@
         "credit": "",
         "linkToAuthor": "",
         "src": "JYY.png",
-        "alt": "New Year",
+        "alt": "",
         "imgDir": "/images/"
     }
     
