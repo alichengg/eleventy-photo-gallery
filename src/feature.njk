@@ -58,10 +58,16 @@ url: https://eleventy-gallery.netlify.app
                         sizes="100vw"
                     %}
 
+
                     <div class="image-description">
                         <h1 class="h2">{{ image.title }}</h1>
-                        <p>{{ image.credit }} on <a class="credit" href="{{ image.linkToAuthor }}">Pexels</a></p>
+                        <p>
+                            <a class="credit" href="{{ image.linkToAuthor }}" target="_blank" rel="noopener noreferrer">
+                                {{ image.credit }}
+                            </a>
+                        </p>
                     </div>
+
 
                 </div>
             </div>
