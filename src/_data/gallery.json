@@ -7,6 +7,15 @@
         "src": "Snow.png",
         "alt": "New Year",
         "imgDir": "/images/"
+    },
+    {
+        "title": "Snow",
+        "date": "January 01, 2025",
+        "credit": "",
+        "linkToAuthor": "",
+        "src": "666.png",
+        "alt": "",
+        "imgDir": "/images/"
     }
 
 
