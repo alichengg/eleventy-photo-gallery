@@ -3,16 +3,16 @@
         "title": "Snow Day",
         "date": "January 01, 2025",
         "credit": "",
-        "linkToAuthor": "202501",
+        "linkToAuthor": "202501A",
         "src": "Snow.png",
         "alt": "202501",
         "imgDir": "/images/"
     },
     {
-        "title": "...",
+        "title": "....",
         "date": "October 01, 2024",
         "credit": "",
-        "linkToAuthor": "202401",
+        "linkToAuthor": "202401A",
         "src": "666.png",
         "alt": "202401",
         "imgDir": "/images/"
@@ -21,16 +21,16 @@
         "title": "...",
         "date": "September 13, 2024",
         "credit": "",
-        "linkToAuthor": "202409",
+        "linkToAuthor": "202409A",
         "src": "hanyansu.png",
         "alt": "202409",
         "imgDir": "/images/"
     },
     {
-        "title": "...",
+        "title": "..",
         "date": "September 07, 2024",
         "credit": "",
-        "linkToAuthor": "20240907",
+        "linkToAuthor": "20240907A",
         "src": "datou.png",
         "alt": "20240907",
         "imgDir": "/images/"
@@ -39,7 +39,7 @@
         "title": "Wukong",
         "date": "August 30, 2024",
         "credit": "",
-        "linkToAuthor": "20240830",
+        "linkToAuthor": "20240830A",
         "src": "wuk.png",
         "alt": "20240830",
         "imgDir": "/images/"
@@ -48,7 +48,7 @@
         "title": "Wukong",
         "date": "August 31, 2024",
         "credit": "",
-        "linkToAuthor": "20240831",
+        "linkToAuthor": "20240831A",
         "src": "wuk2.png",
         "alt": "20240831",
         "imgDir": "/images/"
@@ -57,7 +57,7 @@
         "title": "JYY",
         "date": "June 24, 2024",
         "credit": "",
-        "linkToAuthor": "20240624",
+        "linkToAuthor": "20240624A",
         "src": "JYY.png",
         "alt": "20240624",
         "imgDir": "/images/"
