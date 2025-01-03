@@ -1,6 +1,6 @@
 [
     {
-        "title": "纯摆拍",
+        "title": "Snow day",
         "date": "January 01, 2025",
         "credit": "",
         "linkToAuthor": "Happy New Year",
@@ -9,59 +9,15 @@
         "imgDir": "/images/"
     },
     {
-        "title": "歪着头看人不礼貌",
+        "title": "",
         "date": "October 01, 2024",
         "credit": "",
         "linkToAuthor": "",
         "src": "666.png",
         "alt": "New Year",
         "imgDir": "/images/"
-    },
-    {
-        "title": "好精致的潦草",
-        "date": "January 01, 2025",
-        "credit": "",
-        "linkToAuthor": "",
-        "src": "hanyansu.png",
-        "alt": "New Year",
-        "imgDir": "/images/"
-    },
-    {
-        "title": "大头怼脸",
-        "date": "January 01, 2025",
-        "credit": "",
-        "linkToAuthor": "",
-        "src": "datou.png",
-        "alt": "New Year",
-        "imgDir": "/images/"
-    },
-    {
-        "title": "乱涂乱画,随地大小便,五百年监禁",
-        "date": "January 01, 2025",
-        "credit": "",
-        "linkToAuthor": "",
-        "src": "wuk.png",
-        "alt": "New Year",
-        "imgDir": "/images/"
-    },
-    {
-        "title": "天宫几百万年的坏账，俺老孙一棒干平",
-        "date": "January 01, 2025",
-        "credit": "",
-        "linkToAuthor": "",
-        "src": "wuk2.png",
-        "alt": "New Year",
-        "imgDir": "/images/"
-    },
-    {
-        "title": "我当时的计划是画一个很凶的表情",
-        "date": "January 01, 2025",
-        "credit": "",
-        "linkToAuthor": "",
-        "src": "JYY.png",
-        "alt": "New Year",
-        "imgDir": "/images/"
     }
+
     
 
 ]
