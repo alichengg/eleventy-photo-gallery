@@ -63,7 +63,7 @@ eleventyConfig.addShortcode("img", async function ({ src, alt, className, imgDir
     throw new Error(`Missing \`alt\` on responsive image from: ${src}`);
   }
 
-  const IMAGE_DIR = imgDir || "./src/images/";
+  const IMAGE_DIR = imgDir || "/images/";
 
   // 直接使用原始图片，不生成压缩格式
   const originalSrcPath = IMAGE_DIR + src;
