@@ -57,34 +57,46 @@ module.exports = (eleventyConfig) => {
     const year = new Date().getFullYear();
     return year.toString();
   });
-eleventyConfig.addShortcode("img", async function ({ src, alt, width, height, widths, className, imgDir, sizes = "100vw"}) {
-  if (alt === undefined) {
-    throw new Error(`Missing \`alt\` on responsive image from: ${src}`);
-  }
 
-  const IMAGE_DIR = imgDir || "./src/images/";
-  const metadata = await Image(IMAGE_DIR + src, {
-    widths: [], // 不生成多分辨率图片
-    formats: ["webp", "jpeg"], // 可选择保留原始格式
-    urlPath: "/img/",
-    outputDir: "_site/img",
-    defaultAttributes: {
-      loading: "lazy",
-      decoding: "async"
+  eleventyConfig.addShortcode("img", async function ({ src, alt, width, height, widths, className, imgDir, sizes = "100vw"}) {
+    if (alt === undefined) {
+      throw new Error(`Missing \`alt\` on responsive image from: ${src}`);
     }
+
+    const IMAGE_DIR = imgDir || "./src/images/";
+    const metadata = await Image(IMAGE_DIR + src, {
+      widths: widths || [300, 480, 640, 1024],
+      formats: ["webp", "jpeg"],
+      urlPath: "/img/",
+      outputDir: "_site/img",
+      defaultAttributes: {
+        loading: "lazy",
+        decoding: "async"
+      }
+    });
+
+    let lowsrc = metadata.jpeg[0];
+    let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+
+    const sources = Object.values(metadata).map((imageFormat) => {
+      const srcType = imageFormat[0].sourceType;
+      const srcset = imageFormat.map(entry => entry.srcset).join(", ");
+      return `<source type="${srcType}" srcset="${srcset}" sizes="${sizes}">`
+    }).join("\n");
+
+    const img = `
+      <img
+        src="${lowsrc.url}"
+        width="${highsrc.width}"
+        height="${highsrc.height}"
+        alt="${alt}"
+        loading="lazy"
+        decoding="async"
+        class="${className || ''}"
+      >`;
+
+    return `<picture>\n\t${sources}\n\t${img}</picture>`;
   });
-
-  const img = `
-    <img
-      src="${metadata.jpeg[0].url}" 
-      alt="${alt}" 
-      loading="lazy" 
-      decoding="async" 
-      class="${className || ''}"
-    >`;
-
-  return `<picture>${img}</picture>`;
-});
 
   return {
     dir: {
